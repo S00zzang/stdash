@@ -1,0 +1,22 @@
+[project]
+name = "stdash"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "S00zzang", email = "sujinpark8719561@gmail.com"},
+]
+dependencies = [
+    "streamlit>=1.38.0",
+    "matplotlib>=3.9.2",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
