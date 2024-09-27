@@ -27,22 +27,19 @@ def load_data():
 data = load_data()
 df = pd.DataFrame(data)
 
-df['request_time'] = pd.to_datetime(df['request_time']).dt.floor('30min')
-df['prediction_time'] = pd.to_datetime(df['prediction_time']).dt.floor('30min')
+# TODO
+# request_time, prediction_time 이용해 '%Y-%m-%d %H' 형식
+# 즉 시간별 GROUPBY COUNT 하여 plt 차트 그려보기
 
-r_hourly_counts = df.groupby('request_time').size()
-p_hourly_counts = df.groupby('prediction_time').size()
+df['request_time'] = pd.to_datetime(df['request_time']).dt.strftime('%Y-%m-%d %H')
+time = df.groupby('request_time').size()
 
-
-plt.bar(r_hourly_counts.index, r_hourly_counts.values, label='request', width=0.015)
-plt.plot(p_hourly_counts.index, p_hourly_counts.values, color='red', marker='o', label='prediction')
-
-plt.title('request & prediction per hour')
-
-plt.ylabel('count')
-plt.xticks(rotation=45)
-
-plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%m-%d %H'))
+plt.title('Requests by Date and Time')
+plt.bar(time.index, time.values)
+plt.plot(time.index, time.values, marker='o', color='r')
+plt.xlabel('Date and Time')  # x축 레이블
+plt.ylabel('Count')  # y축 레이블
+plt.xticks(rotation = 45)
 
 # 화면에 그리기
 st.pyplot(plt)
