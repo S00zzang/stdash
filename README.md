@@ -10,7 +10,8 @@
 
 # Usage
 ```
-$ streamlit run src/stdash/app.py
+$ source .venv/bin/activate
+$ streamlit run src/stdash/home.py
 ```
 
 ## STEP 1
@@ -24,6 +25,7 @@ $ streamlit run src/stdash/app.py
 ## STEP 2
 ```
 # Statistics / imbalances between requester and handler (identify who has a problem with processing) -> Add VIEW
+
 # deploy
 # docker
 # multi pages
@@ -34,11 +36,20 @@ $ streamlit run src/stdash/app.py
 https://s00zzang-stdash.streamlit.app/
 
 + docker
+```
+sudo docker pull s00zzang/stdash:0.2.0 
+sudo docker run -d -p 8501:8501 s00zzang/stdash:0.2.0
+```
 
+![image](https://github.com/user-attachments/assets/b1b023a6-aab8-4f3b-89f5-b3ccf4c558e3)
 
 + multi pages
 
-![image](https://github.com/user-attachments/assets/f069527f-bb8c-4a9c-8281-72fb1d689e5e)
+![image](https://github.com/user-attachments/assets/9595539f-ca6e-4653-af31-bbd39c0c56cd)
+
++ streamlit chart
+
+![image](https://github.com/user-attachments/assets/f7500772-8727-43ab-a7c8-454a3dbd3f0b)
 
   
 ## STEP 3
