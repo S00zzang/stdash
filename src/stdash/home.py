@@ -3,6 +3,12 @@ import pandas as pd
 import requests
 from PIL import Image
 
+st.set_page_config(
+     page_title="CNN JOB MON",
+     layout="centered",
+     page_icon=":smiley_cat:",
+    initial_sidebar_state="expanded")
+
 st.markdown("# 🖼️ 이미지 처리 프로그램")
 st.sidebar.markdown("# Home")
 

@@ -6,12 +6,6 @@ import matplotlib.dates as mdates
 from home import load_data
 
 
-st.set_page_config(
-    page_title="CNN JOB MON",
-    layout="centered",
-    page_icon=":smiley_cat:",
-    initial_sidebar_state="expanded")
-
 st.markdown("# STEP 2 ❄️")
 st.sidebar.markdown("# STEP 2 ❄️")
 
