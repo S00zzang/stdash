@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 
-from data import load_data
+from home import load_data
 
 
 st.set_page_config(
