@@ -17,7 +17,7 @@ $ streamlit run src/stdash/app.py
 ```
 # Start with chart using a python, pandas
 ```
-![image](https://github.com/user-attachments/assets/3449aa3d-10d2-44cb-a5a7-6352c628b295)
+![image](https://github.com/user-attachments/assets/2e14ac8d-31d7-4d83-9471-cc7da3378cbe)
 
 
 ## STEP 2
