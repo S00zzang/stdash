@@ -69,3 +69,18 @@ uvicorn src.mnist.main:app --reload
 ```
 # Apply hotdog
 ```
+
++ Apply hotdog
+  
+  If not hotdog..
+  
+  ![image](https://github.com/user-attachments/assets/cb8fc901-5b9a-4d38-9b62-776af41fd153)
+  ![image](https://github.com/user-attachments/assets/76b609c8-8ba5-42ac-8f94-a1f08430e1f3)
+
+  If hotdog..
+
+  ![image](https://github.com/user-attachments/assets/81a6eb27-3c01-45c7-929a-d17060ddd666)
+  ![image](https://github.com/user-attachments/assets/06bbff48-c392-4e58-8425-dd07adbb3290)
+
+
+
