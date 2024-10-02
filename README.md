@@ -55,5 +55,17 @@ sudo docker run -d -p 8501:8501 s00zzang/stdash:0.2.0
 ## STEP 3
 ```
 # file upload
-# Apply hotdog 
+```
+
++ file upload
+```
+cd code/mnist
+uvicorn src.mnist.main:app --reload
+```
+![image](https://github.com/user-attachments/assets/107bbc08-a65e-45bb-8947-b0a57cade5cb)
+**file name must be in (code/mnist/note/train_img)**
+
+## STEP 4
+```
+# Apply hotdog
 ```
